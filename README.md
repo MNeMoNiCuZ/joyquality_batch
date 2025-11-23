@@ -1,3 +1,27 @@
+This fork adds a batch processing script, `batch.py`, for scoring multiple images at once.
+
+## Batch Scoring
+
+The `batch.py` script will process all images in the `input` folder. For each image, it calculates a quality score and saves it to a text file with the same name as the image (e.g., `my_image.jpg` will have a corresponding `my_image.txt`).
+
+### How to Use
+
+1.  Create an `input` folder in the root of the project directory.
+2.  Place all the images you want to score inside the `input` folder. The script supports `.jpg`, `.jpeg`, `.png`, `.webp`, `.bmp`, `.gif`, `.tiff`, `.tga`, `.avif`, and JPEG 2000 formats (`.j2k`, `.jp2`, `.jpx`, `.jpm`).
+3.  Run the script:
+    ```
+    python batch.py
+    ```
+4.  The script will generate a `.txt` file for each image in the `input` folder containing the quality score.
+
+## Setup
+
+1.  **Create Virtual Environment**: Run the `venv_create.bat` script to automatically create a Python virtual environment. It will also offer to install the required packages.
+2.  **Install Dependencies**: If you didn't install the packages in the previous step, activate the environment (`venv\Scripts\activate.bat`) and run:
+    ```
+    pip install -r requirements.txt
+    ```
+
 # JoyQuality
 
 JoyQuality is an open source Image Quality Assessment (IQA) model.  It takes as input an image and gives as output a scalar score representing the overall quality of the image.  Highlights:

@@ -11,7 +11,10 @@ from tqdm import tqdm
 class FolderDataset(Dataset):
     def __init__(self, folder: Path):
         # Only standard extensions
-        self.paths = [p for p in folder.iterdir() if p.suffix.lower() in (".jpg", ".jpeg", ".png")]
+        self.paths = [p for p in folder.iterdir() if p.suffix.lower() in (
+            ".jpg", ".jpeg", ".png", ".webp", ".bmp", ".gif", ".tiff", ".tga", ".avif", 
+            ".j2k", ".jp2", ".jpx", ".jpm"
+        )]
     
     def __len__(self):
         return len(self.paths)
