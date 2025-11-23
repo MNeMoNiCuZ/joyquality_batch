@@ -1,0 +1,5 @@
+tqdm
+Pillow
+argparse
+psycopg[binary]
+transformers
