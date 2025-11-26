@@ -16,7 +16,7 @@ The `batch.py` script will process all images in the `input` folder. For each im
 
 ## Setup
 
-1.  **Create Virtual Environment**: Run the `venv_create.bat` script to automatically create a Python virtual environment. It will also offer to install the required packages.
+1.  **Create Virtual Environment**: Create a virtual environment manually, or run the `venv_create.bat` script to automatically create a Python virtual environment. It will also offer to install the required packages.
 2.  **Install Dependencies**: If you didn't install the packages in the previous step, activate the environment (`venv\Scripts\activate.bat`) and run:
     ```
     pip install -r requirements.txt
